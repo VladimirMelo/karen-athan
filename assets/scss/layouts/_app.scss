@@ -173,15 +173,17 @@
                 max-height: 50vh;
                 position: absolute;
                 inset: auto 2% 0% auto;
+
+                @media (width <=48em) {
+                    opacity: .3;
+                    height: 40vh;
+                    z-index: -1;
+                }
             }
 
             nav {
                 display: grid;
                 align-items: center;
-            }
-
-            @media (width <=48em) {
-                grid-template-columns: 1fr;
             }
 
             &--image {
@@ -199,6 +201,11 @@
                     width: 100%;
                     margin: auto;
                 }
+            }
+
+            @media (width <=48em) {
+                grid-template-columns: 1fr;
+                overflow: hidden;
             }
         }
     }
