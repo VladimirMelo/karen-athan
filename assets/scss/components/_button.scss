@@ -1,0 +1,47 @@
+.button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    // background-color: transparent;
+    font-family: var(--font-family);
+    border: 2px solid var(--secondary-green);
+    background-color: var(--secondary-green);
+    color: var(--color-primary-dark);
+    border-radius: var(--radius);
+    letter-spacing: 2px;
+    min-width: 160px;
+    min-height: 55px;
+    transition: 0.3s;
+    cursor: pointer;
+
+    &:hover {
+        transform: translateY(-4px);
+    }
+
+    &:active {
+        transform: translateY(2px);
+    }
+
+    &[disabled] {
+        pointer-events: none;
+        cursor: not-allowed;
+        cursor: -webkit-not-allowed;
+        color: #2b2b2b;
+        border-color: #ddd;
+        background-color: #ddd;
+    }
+
+    &-checkbox {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        transition: .3s;
+        cursor: pointer;
+
+        &:has(:checked) {
+			color: var(--gray-7);
+		}
+    }
+}

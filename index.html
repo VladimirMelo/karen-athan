@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Neuropsicopedagoga</title>
+
+        <!-- FONTS -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Maven+Pro:wght@400..900&family=Orelega+One&family=Roboto+Slab:wght@100..900&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined">
+        <!-- PLUGINS -->
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="./assets/css/styles.css">
+    </head>
+
+    <body>
+        <div class="app">
+            <header class="header">
+                <nav class="flex justify-center align-center gap-3 h-20">
+                    <a href="#">Piscoterapia</a>
+                    <a href="#orientacao">Orientação</a>
+                    <a class="header-brand" href="#"></a>
+                    <a href="#">Terapia</a>
+                    <a href="#contato">Contato</a>
+                </nav>
+            </header>
+
+            <main class="main">
+                <div class="app-intro">
+                    <video autoplay muted loop preload
+                        poster="https://images.pexels.com/photos/7176026/pexels-photo-7176026.jpeg">
+                        <!-- <source src="extensao.webm" /> -->
+                        <source src="./assets/image/video/intro.mp4" />
+                    </video>
+
+                    <div>
+                        <h1>Neuropsicopedagoga</h1>
+                        <h2>Apoiando famílias e crianças na<wbr /> construção de novas conquistas.</h2>
+                    </div>
+
+                    <span class="app-intro__icon">
+                        <i class="ti ti-player-play"></i>
+                    </span>
+                </div>
+
+                <section class="app-section" id="orientacao">
+                    <div class="app-section__item container-fixed">
+                        <hgroup class="flex flex-col justify-center align-center gap-5">
+                            <h1 class="app-title">Agende sua consulta</h1>
+
+                            <h2>Sua consulta presencial ou online via WhatsApp.</h2>
+
+                            <a class="button" href="https://wa.me/55999999999" target="_blank">Agendar agora</a>
+                        </hgroup>
+
+                        <img src="./assets/image/png/1.png" alt="[Neuropsicopedagoga]">
+                    </div>
+                </section>
+
+                <section class="app-section">
+                    <div class="app-section__item container-fixed">
+                        <hgroup class="flex flex-col justify-center align-center gap-5">
+                            <h1 class="app-title">Sobre o meu</h1>
+
+                            <h2>Método de atendimento acolhedor e individualizado.</h2>
+
+                            <button class="button" onclick="openModal()">Clique aqui</button>
+                        </hgroup>
+
+                        <div class="app-section__item--image"
+                            style="background-image: url(./assets/image/2_800x800.webp)"></div>
+                    </div>
+                </section>
+
+                <section class="app-section">
+                    <div class="app-section__item container-fixed">
+                        <hgroup class="flex flex-col justify-center align-center gap-5">
+                            <h1 class="app-title">E-book</h1>
+
+                            <h2>Como apoiar o aprendizado do seu filho em casa.</h2>
+
+                            <a class="button" href="#">Clique aqui</a>
+                        </hgroup>
+
+                        <div class="app-section__item--image"
+                            style="background-image: url(./assets/image/3_800x800.webp)"></div>
+                    </div>
+                </section>
+
+                <section class="app-section" id="contato">
+                    <div class="app-section__item container-fixed">
+                        <hgroup class="flex flex-col justify-center align-center gap-5">
+                            <h1 class="app-title">Localização</h1>
+
+                            <h2>Nosso escritório está localizado em São Paulo.</h2>
+
+                            <a class="button" href="#">Google Maps</a>
+                        </hgroup>
+
+                        <div class="grid gap-2">
+                            <h3 class="font-bold">Siga-nos</h3>
+
+                            <ul class="flex gap-2 flex-wrap justify-center">
+                                <li>
+                                    <a class="flex items-center justify-center border rounded-full w-10 h-10 text-xl hover:-translate-y-2"
+                                        href="#">
+                                        <i class="ti ti-brand-facebook"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="flex items-center justify-center border rounded-full w-10 h-10 text-xl hover:-translate-y-2"
+                                        href="#">
+                                        <i class="ti ti-brand-instagram"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="flex items-center justify-center border rounded-full w-10 h-10 text-xl hover:-translate-y-2"
+                                        href="#">
+                                        <i class="ti ti-brand-linkedin"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="flex items-center justify-center border rounded-full w-10 h-10 text-xl hover:-translate-y-2"
+                                        href="#">
+                                        <i class="ti ti-brand-youtube"></i>
+                                    </a>
+                                </li>
+                            </ul>
+
+                            <h3 class="font-bold">Contato</h3>
+
+                            <ul class="flex justify-center flex-col items-center">
+                                <li class="flex items-center gap-2">
+                                    <a href="#" target="_blank">
+                                        <i class="ti ti-phone"></i> (00) 0 0000 0000
+                                    </a>
+                                </li>
+                                <li class="flex items-center gap-2">
+                                    <a href="mailto:email@email.com.br" target="_blank">
+                                        <i class="ti ti-mail"></i> email@email.com.br
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+            </main>
+
+            <footer class="footer">
+                <div class="container">
+                    <copyright>&copy; 2025 <b>Neuropsicopedagoga.</b> Todos os direitos reservados.</copyright>
+                    <p>
+                        Feito com <i class="ti ti-heart"></i>
+                        <a href="https://wa.me/5521982592519" target="_blank">
+                            Vladimir Melo
+                        </a>
+                    </p>
+                </div>
+            </footer>
+
+            <!-- Modal -->
+            <div id="modalOverlay" class="fixed inset-0 bg-black/50 flex items-center justify-center hidden z-10"
+                onclick="closeModal(event)">
+                <div class="bg-white p-6 rounded-lg shadow-lg min-w-[680px] relative" onclick="event.stopPropagation()">
+                    <h2 class="text-xl font-bold mb-4">Título do Modal</h2>
+                    <p class="text-gray-700 mb-4">Este é o conteúdo do modal.</p>
+                    <button onclick="closeModal()" class="absolute top-2 right-2 text-gray-500 hover:text-black">
+                        ✕
+                    </button>
+                    <button class="mt-4 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">
+                        Ação
+                    </button>
+                </div>
+            </div>
+
+            <button class="app-back goto">
+                <span class="material-symbols-outlined">arrow_upward_alt</span>
+            </button>
+        </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+            integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="./assets/js/main.js"></script>
+
+        <script>
+            function openModal() {
+                document.getElementById('modalOverlay').classList.remove('hidden');
+            }
+
+            function closeModal(event) {
+                const modal = document.getElementById('modalOverlay');
+                if (!event || event.target === modal) {
+                    modal.classList.add('hidden');
+                }
+            }
+        </script>
+    </body>
+
+</html>

@@ -1,0 +1,25 @@
+.footer {
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        min-height: 80px;
+        padding: 1rem 10px;
+
+        p {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+
+            a {
+                font-style: italic;
+            }
+        }
+
+        @media (width <= 48em) {
+            flex-flow: column;
+            justify-content: center;
+            text-align: center;
+        }
+    }
+}

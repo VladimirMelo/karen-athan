@@ -1,0 +1,48 @@
+:root {
+    --font-family: "Maven Pro", sans-serif;
+
+    --primary: #dbcfe1;
+    --primary-rgb: rgb(151, 66, 229);
+
+    --secondary: #3a5a80;
+
+    --color-dark: #181818;
+    --color-light: #ffffff;
+    --alpha-color: #00000014;
+
+    --gray-0: #000000;
+    --gray-1: #0e1013;
+    --gray-2: #1b1d20;
+    --gray-3: #222326;
+    --gray-4: #606163;
+    --gray-5: #b0b2b3;
+    --gray-7: #ffffff;
+
+    --red-50: #fff1f1;
+    --red-100: #ffe0e0;
+    --red-200: #ffc6c6;
+    --red-300: #ff9f9f;
+    --red-400: #ff6767;
+    --red-500: #fc3737;
+    --red-600: #ea1f1f;
+    --red-700: #c51010;
+    --red-800: #a21212;
+    --red-900: #861616;
+    --red-950: #490606;
+
+    --yellow-0: #efcd0e;
+    --blue-0: #92b3cb;
+    --blue-1: #b1dbd4;
+
+    --primary-green: #008c45;
+    --secondary-green: #afec2c;
+
+    --gap-0: 0.75rem;
+    --gap-1: 1.25rem;
+    --gap-2: 2.5rem;
+
+    --radius: 8px;
+
+    --container-width: 1200px;
+    --theme-background: var(--primary);
+}

@@ -1,0 +1,60 @@
+.header {
+    position: fixed;
+    transition: .5s;
+    width: 100%;
+    z-index: 2;
+
+    &-fixed {
+        top: 0;
+        left: 0;
+        box-shadow: 0px 3px 2px rgba(0, 0, 0, 0.22);
+        background-color: var(--primary);
+
+        nav {
+            a {
+                color: var(--primary-rgb) !important;
+            }
+        }
+    }
+
+    &-brand {
+        display: inline-block;
+        min-width: 240px;
+        height: 100%;
+        background-image: url(../image/png/karen-athan.png);
+        background-position: 50%;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 3vw;
+        gap: 10px;
+        height: 80px;
+
+        a {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex: 1;
+            height: 100%;
+            font-size: larger;
+            color: var(--primary);
+            text-transform: uppercase;
+
+            @media (width <=48em) {
+                &:not(.header-brand) {
+                    display: none !important;
+                }
+            }
+        }
+
+        @media (width <=48em) {
+            backdrop-filter: blur(10px);
+        }
+    }
+}
