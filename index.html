@@ -25,11 +25,11 @@
         <div class="app">
             <header class="header">
                 <nav class="flex justify-center align-center gap-3 h-20">
-                    <a href="#agenda">Agenda</a>
-                    <a href="#metodo">Método</a>
+                    <a class="goto" href="#agenda">Agenda</a>
+                    <a class="goto" href="#metodo">Método</a>
                     <a class="header-brand" href="#"></a>
-                    <a href="#ebook">E-book</a>
-                    <a href="#contato">Contato</a>
+                    <a class="goto" href="#ebook">E-book</a>
+                    <a class="goto" href="#contato">Contato</a>
                 </nav>
             </header>
 
@@ -52,6 +52,10 @@
                         </span>
                         Assista o vídeo
                     </a>
+
+                    <span class="app-text__vertical">
+                        Karen Athan
+                    </span>
                 </div>
 
                 <section class="app-section" id="agenda">
@@ -157,7 +161,7 @@
                 </section>
             </main>
 
-            <footer class="footer">
+            <footer class="app-footer">
                 <div class="container">
                     <copyright>&copy; 2025 <b>Neuropsicopedagoga.</b> Todos os direitos reservados.</copyright>
                     <p>
@@ -184,9 +188,16 @@
                 </div>
             </div>
 
-            <button class="app-back goto">
-                <span class="material-symbols-outlined">arrow_upward_alt</span>
-            </button>
+            <div class="app-footer__fixed">
+                <a href="https://wa.me/5521982592519" target="_blank">
+                    <i class="ti ti-brand-whatsapp"></i>
+                    <span>Ainda tem<br>alguma dúvida?</span>
+                </a>
+
+                <button class="goto">
+                    <i class="ti ti-chevron-up"></i>
+                </button>
+            </div>
         </div>
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"

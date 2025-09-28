@@ -1,25 +1,72 @@
-.footer {
-    .container {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        min-height: 80px;
-        padding: 1rem 10px;
-
-        p {
+.app {
+    &-footer {
+        .container {
             display: flex;
             align-items: center;
-            gap: 5px;
+            justify-content: space-between;
+            min-height: 80px;
+            padding: 1.3rem 10px 80px;
 
-            a {
-                font-style: italic;
+            p {
+                display: flex;
+                align-items: center;
+                gap: 5px;
+
+                a {
+                    font-style: italic;
+                }
+            }
+
+            @media (width <=48em) {
+                flex-flow: column;
+                justify-content: center;
+                text-align: center;
             }
         }
 
-        @media (width <= 48em) {
-            flex-flow: column;
-            justify-content: center;
-            text-align: center;
+        &__fixed {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            display: none;
+            align-items: center;
+            justify-content: space-between;
+            background-color: var(--blue-0);
+            z-index: 2;
+
+            :where(button, i) {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 60px;
+                min-height: 60px;
+                background-color: var(--secondary);
+                color: var(--color-light);
+                font-size: 1.3em;
+                border: none;
+                cursor: pointer;
+            }
+
+            a {
+                display: flex;
+                align-items: center;
+
+                span {
+                    color: var(--secondary);
+                    text-transform: uppercase;
+                    font-size: .675em;
+                    font-weight: 500;
+                    line-height: 1;
+                    text-align: left;
+                }
+
+                i {
+                    margin-right: 10px;
+                    font-size: 1.8em;
+                    background-color: var(--primary-green);
+                }
+            }
         }
     }
 }
